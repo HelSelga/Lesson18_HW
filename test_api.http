@@ -1,0 +1,37 @@
+GET http://127.0.0.1:5000/movies/
+Accept: application/json
+
+###
+
+DELETE http://127.0.0.1:5000/movies/21
+Content-Type: application/json
+
+###
+
+PUT http://127.0.0.1:5000/movies/21
+Content-Type: application/json
+
+{
+  "description": "Test-description 2",
+  "trailer": "Test-trailer 2",
+  "year": 2000,
+  "rating": 6,
+  "genre_id": 2,
+  "director_id": 4
+}
+
+
+###
+
+POST http://127.0.0.1:5000/movies/
+Content-Type: application/json
+
+{
+  "id": 21,
+  "description": "Test-description",
+  "trailer": "Test-trailer",
+  "year": 2013,
+  "rating": 4,
+  "genre_id": 6,
+  "director_id": 12
+}
